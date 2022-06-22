@@ -1,4 +1,6 @@
-
+body {
+  background-color: rgba(31, 31, 32, 0.836);
+}
 .App {
   text-align: center;
   display: flex;
@@ -16,11 +18,19 @@
     transform: rotate(360deg);
   }
 }
-/* ol, ul {
-	list-style: none;
-} */
+h1 {
+  color: rgb(115, 239, 239);
+  font-size: 3rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(34, 33, 33);
+}
+
 li {
-  width: 75px;
+  list-style: '◦';
+  list-style-position: inside;
+}
+ul {
+  margin-right: 40px;
 }
 div.crystal {
   display: flex;
@@ -30,8 +40,13 @@ div.crystal {
   text-align: center;
   padding: 20px;
   background-color: rgba(128, 128, 128, 0.618);
-  border: 3px dashed;
+  border: 3px dashed rgb(255, 191, 0);
   margin: 10px;
+  border-radius: 50%;
+  width: 250px;
+  list-style: '✨';
+  list-style-position: inside;
+  
 }
 
 div.crystals-list {
@@ -52,6 +67,24 @@ div.dragon {
   background-color: rgba(36, 90, 31, 0.504);
   border: 3px solid rgba(177, 42, 42, 0.964);
   margin: 10px;
+  list-style: '🐲';
+  list-style-position: inside;
+}
+div.kid-list {
+  display: flex;
+  flex-direction: row;
+}
+
+div.kid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(235, 47, 207, 0.504);
+  border: 7px dotted rgba(67, 10, 76, 0.964);
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
 }
 
 

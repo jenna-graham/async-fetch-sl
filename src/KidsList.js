@@ -1,8 +1,16 @@
 import React from 'react';
+import Kid from './Kid';
 
-export default function KidsList() {
+export default function KidsList({ kids = [] }) {
   return (
-    <div>KidsList</div>
+    <div className='kid-list'>
+      {
+        kids.map((kid, i) => {
+          return <Kid {...kid}key={kid.name + i + kid.id}/>; 
+        })
+      }
+        
+    </div>
   );
 }
 

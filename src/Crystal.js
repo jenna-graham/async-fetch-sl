@@ -5,7 +5,7 @@ export default function Crystal({ name, color, chakra, healings }) {
     <div className='crystal'>
       <h2>{name}</h2>
       <p>has a {color} color.</p>
-      <p>represents the {chakra} chakra.</p>
+      <p>{chakra} chakra </p>
       <ul>healing properties:{healings.map((healing, i) => <li key={healing + i}>{healing}</li>)}</ul>
     </div>
   );
