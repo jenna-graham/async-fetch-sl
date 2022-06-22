@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(31, 31, 32, 0.836);
+  background-color: rgba(9, 9, 9, 0.836);
 }
 .App {
   text-align: center;
@@ -21,8 +21,7 @@ body {
 h1 {
   color: rgb(115, 239, 239);
   font-size: 3rem;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(34, 33, 33);
+  text-shadow: rgb(20, 21, 21) 2px 0px 0px, rgb(20, 21, 21) 1.75517px 0.958851px 0px, rgb(20, 21, 21) 1.0806px 1.68294px 0px, rgb(20, 21, 21) 0.141474px 1.99499px 0px, rgb(20, 21, 21) -0.832294px 1.81859px 0px, rgb(20, 21, 21) -1.60229px 1.19694px 0px, rgb(20, 21, 21) -1.97998px 0.28224px 0px, rgb(20, 21, 21) -1.87291px -0.701566px 0px, rgb(20, 21, 21) -1.30729px -1.5136px 0px, rgb(20, 21, 21) -0.421592px -1.95506px 0px, rgb(20, 21, 21) 0.567324px -1.91785px 0px, rgb(20, 21, 21) 1.41734px -1.41108px 0px, rgb(20, 21, 21) 1.92034px -0.558831px 0px;
 }
 
 li {
@@ -46,16 +45,19 @@ div.crystal {
   width: 250px;
   list-style: '✨';
   list-style-position: inside;
+  flex-wrap: wrap;
   
 }
 
 div.crystals-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 div.dragon-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 div.dragon {
   display: flex;
@@ -69,10 +71,12 @@ div.dragon {
   margin: 10px;
   list-style: '🐲';
   list-style-position: inside;
+  width: 200px;
 }
 div.kid-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 div.kid {
@@ -82,9 +86,28 @@ div.kid {
   padding: 20px;
   background-color: rgba(235, 47, 207, 0.504);
   border: 7px dotted rgba(67, 10, 76, 0.964);
-  margin: 10px;
+  margin: 30px;
   border-radius: 10px;
   width: 250px;
+  height: 275px;
+}
+div.book-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(99, 113, 141, 0.677);
+  border: 7px solid rgba(19, 21, 85, 0.964);
+  margin: 30px;
+  border-radius: 10px;
+  width: 250px;
+  height: 275px;
 }
 
 

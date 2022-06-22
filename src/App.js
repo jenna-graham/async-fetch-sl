@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+
+import { getCrystals, getDragons, getKids, getBooks } from './services/fetch-utils.js';
 import CrystalsList from './CrystalsList.js';
-import { getCrystals, getDragons, getKids } from './services/fetch-utils.js';
 import DragonList from './DragonList.js';
 import KidsList from './KidsList.js';
+import BookList from './BookList.js';
 
 import './App.css';
 // import your arrays here
@@ -11,6 +13,7 @@ function App() {
   const [crystals, setCrystals] = useState([]);
   const [dragons, setDragons] = useState([]);
   const [kids, setKids] = useState([]);
+  const [books, setBooks] = useState([]);
 
   async function fetchCrystalsData() {
     const data = await getCrystals();
@@ -24,11 +27,17 @@ function App() {
     const data = await getKids();
     setKids(data);
   }
+  async function fetchBooksData() {
+    const data = await getBooks();
+    setBooks(data);
+  }
+
 
   useEffect(() => {
     fetchCrystalsData();
     fetchDragonsData();
     fetchKidsData();
+    fetchBooksData();
   }, []);
 
 
@@ -40,6 +49,8 @@ function App() {
       <DragonList dragons={dragons} />
       <h1>My Children</h1>
       <KidsList kids={kids}/>
+      <h1>Books</h1>
+      <BookList books={books}/>
     </div>
   );
 }
