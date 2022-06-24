@@ -1,32 +1,14 @@
+body {
+  background-color: rgba(9, 9, 9, 0.836);
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +18,96 @@
     transform: rotate(360deg);
   }
 }
+h1 {
+  color: rgb(115, 239, 239);
+  font-size: 3rem;
+  text-shadow: rgb(20, 21, 21) 2px 0px 0px, rgb(20, 21, 21) 1.75517px 0.958851px 0px, rgb(20, 21, 21) 1.0806px 1.68294px 0px, rgb(20, 21, 21) 0.141474px 1.99499px 0px, rgb(20, 21, 21) -0.832294px 1.81859px 0px, rgb(20, 21, 21) -1.60229px 1.19694px 0px, rgb(20, 21, 21) -1.97998px 0.28224px 0px, rgb(20, 21, 21) -1.87291px -0.701566px 0px, rgb(20, 21, 21) -1.30729px -1.5136px 0px, rgb(20, 21, 21) -0.421592px -1.95506px 0px, rgb(20, 21, 21) 0.567324px -1.91785px 0px, rgb(20, 21, 21) 1.41734px -1.41108px 0px, rgb(20, 21, 21) 1.92034px -0.558831px 0px;
+}
+
+li {
+  list-style: '◦';
+  list-style-position: inside;
+}
+ul {
+  margin-right: 40px;
+}
+div.crystal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.618);
+  border: 3px dashed rgb(255, 191, 0);
+  margin: 10px;
+  border-radius: 50%;
+  width: 250px;
+  list-style: '✨';
+  list-style-position: inside;
+  flex-wrap: wrap;
+  
+}
+
+div.crystals-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.dragon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.dragon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(36, 90, 31, 0.504);
+  border: 3px solid rgba(177, 42, 42, 0.964);
+  margin: 10px;
+  list-style: '🐲';
+  list-style-position: inside;
+  width: 200px;
+}
+div.kid-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.kid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(235, 47, 207, 0.504);
+  border: 7px dotted rgba(67, 10, 76, 0.964);
+  margin: 30px;
+  border-radius: 10px;
+  width: 250px;
+  height: 275px;
+}
+div.book-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(99, 113, 141, 0.677);
+  border: 7px solid rgba(19, 21, 85, 0.964);
+  margin: 30px;
+  border-radius: 10px;
+  width: 250px;
+  height: 275px;
+}
+
+
