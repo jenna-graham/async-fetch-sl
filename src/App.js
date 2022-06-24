@@ -7,7 +7,7 @@ import KidsList from './KidsList.js';
 import BookList from './BookList.js';
 
 import './App.css';
-// import your arrays here
+
 
 function App() {
   const [crystals, setCrystals] = useState([]);
